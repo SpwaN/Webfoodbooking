@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orderssytem</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</head>
+<body data-spy="scroll" data-target="#navbar">
+<button onclick="topFunction()" id="backtoTop" title="Go to top">Home</button>
+<a href="#form" id="goToOrder" title="Go to checkout" role="button">Order</a>
+<div class="jumbotron text-center" id="top">
+<h1>Ordersystem</h1>
+</div>
+<nav id="navbar" class="navbar ScrollableMenu">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="#PizzaKlass1">Pizzor klass 1</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#PizzaKlass2">Pizzor klass 2</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#PizzaKlass3">Pizzor klass 3</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#Sas">Såser</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#Dryck">Dryck</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#heading1">Kvitto</a>
+</li>
+</ul>
+</nav>
+<!--Pizza klass 1-->
+<div class="card" id="PizzaKlass1">
+<div class="card-header">
+Pizzor Klass 1
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title1">Margherita: 65kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="1-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="1">0</p>
+<button id="1+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title2">Vesuvio: 65kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="2-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="2">0</p>
+<button id="2+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title3">Altono: 65kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Tonfisk</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="3-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="3">0</p>
+<button id="3+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+</div>
+<!--Pizza klass 2-->
+<div class="card" id="PizzaKlass2">
+<div class="card-header">
+Pizzor Klass 2
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title4">Calzone: 80kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="4-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="4">0</p>
+<button id="4+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title5">Capricciosa: 70kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Champinjoner</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="5-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="5">0</p>
+<button id="5+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title6">Tomaso: 70kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Räkor</p><br>
+<p class="card-text">Eventuella Allergier: Räkor</p>
+<div class"Buttons">
+<button id="6-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="6">0</p>
+<button id="6+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title7">Hawaii: 70kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Ananas</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="7-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="7">0</p>
+<button id="7+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title8">Oriental: 70kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Köttfärs</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="8-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="8">0</p>
+<button id="8+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title9">Venezia: 70kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Tonfisk</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="9-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="9">0</p>
+<button id="9+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title10">Bolognese: 70kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Köttfärs, Lök</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="10-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="10">0</p>
+<button id="10+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title11">Napoli: 70kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Räkor, Champinjoner</p><br>
+<p class="card-text">Eventuella Allergier: Räkor</p>
+<div class"Buttons">
+<button id="11-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="11">0</p>
+<button id="11+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+</div>
+<!--Pizza klass 3-->
+<div class="card" id="PizzaKlass3">
+<div class="card-header">
+Pizzor Klass 3
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title12">Bravo: 75kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Bacon, Lök, Ägg</p><br>
+<p class="card-text">Eventuella Allergier: Ägg</p>
+<div class"Buttons">
+<button id="12-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="12">0</p>
+<button id="12+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title13">Princessa: 75kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Räkor, Champinjoner</p><br>
+<p class="card-text">Eventuella Allergier: Räkor</p>
+<div class"Buttons">
+<button id="13-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="13">0</p>
+<button id="13+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title14">Kroppkärr: 75kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Köttfärs, Champinjoner</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="14-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="14">0</p>
+<button id="14+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title15">Afrikano: 85kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Ananas, Curry, Banan</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="15-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="15">0</p>
+<button id="15+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title16">Önska: 75kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Räkor, Champinjoner</p><br>
+<p class="card-text">Eventuella Allergier: Räkor</p>
+<div class"Buttons">
+<button id="16-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="16">0</p>
+<button id="16+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title17">Lambada: 75kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Köttfärs, Räkor</p><br>
+<p class="card-text">Eventuella Allergier: Räkor</p>
+<div class"Buttons">
+<button id="17-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="17">0</p>
+<button id="17+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title18">Alsterdalen: 75kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Crabfish, Räkor</p><br>
+<p class="card-text">Eventuella Allergier: Crabfish, Räkor</p>
+<div class"Buttons">
+<button id="18-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="18">0</p>
+<button id="18+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title19">Paradis: 75kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Räkor, Ananas</p><br>
+<p class="card-text">Eventuella Allergier: Räkor</p>
+<div class"Buttons">
+<button id="19-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="19">0</p>
+<button id="19+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title20">Roma: 75kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Kantareller, Tomater (Färska)</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="20-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="20">0</p>
+<button id="20+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title21">Banjogatan: 75kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Skinka, Salami, Paprika</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="21-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="21">0</p>
+<button id="21+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title22">Rimini: 75kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Köttfärs, Gorgonzolaost, Lök</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="22-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="22">0</p>
+<button id="22+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title23">Opera: 75kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Köttfärs, Ananas, Curry, Banan</p><br>
+<p class="card-text">Eventuella Allergier: Inga</p>
+<div class"Buttons">
+<button id="23-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="23">0</p>
+<button id="23+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title24">Mesopotamia: 75kr</h5>
+<p class="card-text">Ingredienser: Tomatsås, Ost, Salami, Köttfärs, Nötter</p><br>
+<p class="card-text">Eventuella Allergier: Nötter</p>
+<div class"Buttons">
+<button id="24-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="24">0</p>
+<button id="24+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+</div>
+<!--Såser-->
+<div class="card" id="Sas">
+<div class="card-header">
+Såser
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title25">Bearnaisesås: 10kr</h5>
+<p class="card-text">Mängd: 10cl/burk</p>
+<div class"Buttons">
+<button id="25-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="25">0</p>
+<button id="25+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title26">Kebabsås Mild: 10kr</h5>
+<p class="card-text">Mängd: 10cl/burk</p>
+<div class"Buttons">
+<button id="26-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="26">0</p>
+<button id="26+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title27">Kebabsås Stark: 10kr</h5>
+<p class="card-text">Mängd: 10cl/burk</p>
+<div class"Buttons">
+<button id="27-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="27">0</p>
+<button id="27+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title28">Kebabsås Blandad: 10kr</h5>
+<p class="card-text">Mängd: 10cl/burk</p>
+<div class"Buttons">
+<button id="28-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="28">0</p>
+<button id="28+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title29">Tzatzikisås: 10kr</h5>
+<p class="card-text">Mängd: 10cl/burk</p>
+<div class"Buttons">
+<button id="29-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="29">0</p>
+<button id="29+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title30">Vitlöksås: 10kr</h5>
+<p class="card-text">Mängd: 10cl/burk</p>
+<div class"Buttons">
+<button id="30-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="30">0</p>
+<button id="30+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+</div>
+<!--Dryck-->
+<div class="card" id="Dryck">
+<div class="card-header">
+Dryck
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title31">Coca-Cola: 15kr</h5>
+<p class="card-text">Mängd: 33cl/burk</p>
+<div class"Buttons">
+<button id="31-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="31">0</p>
+<button id="31+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title32">Coca-Cola Light: 15kr</h5>
+<p class="card-text">Mängd: 33cl/burk</p>
+<div class"Buttons">
+<button id="32-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="32">0</p>
+<button id="32+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title33">Fanta: 15kr</h5>
+<p class="card-text">Mängd: 33cl/burk</p>
+<div class"Buttons">
+<button id="33-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="33">0</p>
+<button id="33+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title34">Sprite: 15kr</h5>
+<p class="card-text">Mängd: 33cl/burk</p>
+<div class"Buttons">
+<button id="34-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="34">0</p>
+<button id="34+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title35">Mineralvatten: 15kr</h5>
+<p class="card-text">Mängd: 33cl/burk</p>
+<div class"Buttons">
+<button id="35-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="35">0</p>
+<button id="35+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title36">Lättöl: 15kr</h5>
+<p class="card-text">Mängd: 33cl/burk</p>
+<div class"Buttons">
+<button id="36-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="36">0</p>
+<button id="36+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title37">Coca-Cola: 20kr</h5>
+<p class="card-text">Mängd: 50cl/flaska</p>
+<div class"Buttons">
+<button id="37-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="37">0</p>
+<button id="37+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="card">
+<h5 class="card-title" id="title38">Fanta: 20kr</h5>
+<p class="card-text">Mängd: 50cl/flaska</p>
+<div class"Buttons">
+<button id="38-" type="button" class="btn btn-primary btn-sm" onclick="Subtract(this.id)">-</button>
+<p class="card-text" id="38">0</p>
+<button id="38+" type="button" class="btn btn-primary btn-sm" onclick="Add(this.id)">+</button>
+</div>
+<button type="button" class="btn btn-primary btn-block" onclick="Reset()">Töm Varukorgen</button>
+</div>
+</div>
+</div>
+<div class="col-md-6 text-center" id="nyBestallning">
+<form>
+<div class="form-group" id="form">
+<label for="formtest1" class="white">Beställning</label>
+<textarea type="text" class="form-control" id="formtest1" placeholder="Lägg till produkter ovan" disabled
+rows="5"></textarea>
+</div>
+<div class="form-group">
+<label for="formtest2" class="white">Extra instruktioner</label>
+<textarea type="text" class="form-control" id="formtest2" placeholder="Extra Instruktioner till kocken"
+rows="3"></textarea>
+</div>
+<button id="sub" onclick="submitOrder()" type="button" class="btn btn-primary btn-lg btn-block">Lägg
+Beställning</button>
+</form>
+</div>
+<div class="accordion" id="Kvitto">
+<div class="card" id="parent">
+<div class="card-header" id="heading1">
+<ul class="nav nav-tabs card-header-tabs">
+<li class="nav-item">
+<h5 class="mb-0">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#collapse1" aria-
+expanded="false" aria-controls="collapse1">
+Kvitto
+</button>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#noter1" aria-
+expanded="false" aria-controls="noter1">
+Noter
+</button>
+</h5>
+</li>
+</ul>
+</div>
+<div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
+<div class="card-body">
+<p id="bestallning">Här ser du din beställning</p><br>
+<p id="bestallPris">Här ser du priset</p>
+</div>
+</div>
+<div id="noter1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
+<div class="card-body">
+<br><p id="noter">Här ser du dina extra instruktioner till kocken</p>
+</div>
+</div>
+</div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
