@@ -1,0 +1,114 @@
+.col-md-6{
+position: relative;
+margin-top: 50px !important;
+z-index: 1 !important;
+}
+#top{
+background-color: #f5f5f5;
+}
+html{
+position: relative;
+}
+ul{
+list-style-type: none;
+}
+/*Kod tagen från https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp*/
+.ScrollableMenu{
+background-color: #f5f5f5;
+overflow: auto !important;
+white-space: nowrap !important;
+z-index: 50;
+  }
+.ScrollableMenu > a{
+display: inline-block;
+color: black;
+text-align: center;
+padding: 10px !important;
+padding-top: 15px !important;
+text-decoration: none;
+}
+.ScrollableMenu > a:hover{
+color: #480B14;
+}
+/*Kod tagen från https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp*/
+.ScrollableMenu > a:active{
+color: rgb(61, 72, 11);
+}
+.dropdown {
+margin-bottom:10px;
+border-radius:10px !important;
+}
+body {
+position: relative;
+background-color: #480B14 !important;
+}
+.white
+{
+color: white;
+}
+.accordion{
+width: 65%;
+padding-top: 900px;
+padding-bottom: 200px;
+margin: auto !important;
+}
+.nav{
+justify-content: center !important;
+}
+#bestallningar{
+position: relative;
+padding-top: 900px;
+padding-bottom: 350px;
+z-index: 2 !important;
+}
+#nyBestallning{
+padding-top: 900px;
+z-index: 1 !important;
+}
+#form{
+padding-top: 100px;
+}
+#formtest1{
+height: 100px;
+}
+/* Back to Top --- Taget ur https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
+#backtoTop {
+display: none; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 20px; /* Place the button at the bottom of the page */
+right: 20px; /* Place the button 30px from the right */
+z-index: 2000; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: red; /* Set a background color */
+color: white; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 10px; /* Rounded corners */
+font-size: 18px; /* Increase font size */
+}
+#backtoTop:hover {
+background-color: #555; /* Add a dark-grey background on hover */
+}
+/* Back to Top*/
+#goToOrder {
+display: none; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 80px; /* Place the button at the bottom of the page */
+right: 20px; /* Place the button 30px from the right */
+z-index: 2000; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: red; /* Set a background color */
+color: white; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 10px; /* Rounded corners */
+font-size: 18px; /* Increase font size */
+}
+#goToOrder:hover {
+background-color: #555; /* Add a dark-grey background on hover */
+}
+.Buttons > button, p {
+display: inline-block !important;
+}
